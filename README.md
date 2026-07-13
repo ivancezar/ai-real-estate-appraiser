@@ -1,2 +1,5 @@
-# ai-real-estate-appraiser
-test
+# objective
+
+In many cities, prices have a high variability in both the short and long term, so sometimes it is complicated to know if the rental price of a property or its sale price is adjusted, is above, or is below the market. In addition, finding a good offer usually takes a lot of manual search time over several days or weeks. The solution offered by some property buying and selling platforms is to notify the client based on some basic filters, which are unable to accurately assess how good the offer is.
+
+That is why this project focuses on creating a centralized platform that gathers information from several platforms through web scraping and processes them using various technologies and AI filters to offer the client more precise information on the real value of an offer so they can make better and faster decisions, saving time and costs.
