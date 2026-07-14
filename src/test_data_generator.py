@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     houses_list = []
 
-    number_of_houses = 100
+    number_of_houses = 1000
     for _ in range(number_of_houses):
         house = generate_random_house()
         houses_list.append(house)
