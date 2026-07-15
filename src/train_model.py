@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
+import joblib
 
 def train_and_evaluate_model(file_path: str):
     print(f"Loading data from: {file_path}")
@@ -36,8 +37,12 @@ def train_and_evaluate_model(file_path: str):
         print(f"{col}: ${coef:.2f} per unit")
     print(f"Intercept: ${model.intercept_:.2f}")
 
-
+    # We store the trained model with joblib
+    model_name = "austin_model.joblib"
+    joblib.dump(model, f"{model_name}")
+    print(f"\n Model saved to {model_name}")
 
 if __name__ == "__main__":
     CSV_FILE = "Austin_houses_test.csv"
     train_and_evaluate_model(CSV_FILE)
+    
