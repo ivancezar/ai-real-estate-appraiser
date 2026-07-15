@@ -11,8 +11,6 @@ def estimate_house_value():
         [[3, 2.5, 1800, 2015]],
         columns=["beds", "baths", "sqft", "year_built"]
     )
-    
-    
 
     # We use [0] because the result of model.predict is stored in an array, and we want the first (and only) output value
     estimated_price = model.predict(new_house)[0]
